@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+@media only screen and (max-width: 700px){
+    .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+    }
+}
+
+
+@media only screen and (max-width: 500px){
+    .responsive {
+    width: 100%;
+    }
+}
+
+
+/* page styling start */
+
+.main {
+    background-color: lightblue;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    background:lightblue;
+}
+
+/* Nav bar start */
+
+.navbar {
+    list-style: none;
+    background-color: rgb(0, 136, 169, 0.8);
+    width: 100%;
+}
+
+.navbar a {
+    color: white;
+}
+
+.item:hover a {
+    text-decoration: underline;
+    color: white
+
+}
+
+.sub {
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#ADD8E6,#ADD8E6), radial-gradient(circle at top left,#00008B,#008B8B);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.sub a {
+    padding: 20px;
+}
+
+.sub:hover a {
+    color: rgb(0, 136, 169, 0.8);
+}
+
+
+.dropnav {
+    position: relative;
+    display: inline-block;
+
+} 
+
+.dropcontent {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 100px;
+    padding: 20px;
+    z-index: 1;
+
+}
+
+.dropnav:hover .dropcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+
+.dropcontent a {
+    color: rgb(0, 136, 169, 0.8);
+    padding: 20px;
+}
+
+.drop {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.drop:hover a {
+    background-color: lightblue;
+    width: 100%;
+    
+}
+
+/* end of Nav styling */
+
+
+
+/* header */
+
+.head {
+    color: white;
+    font-size: 70px;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    margin-bottom: 40px;
+    align-items: flex-start;
+    
+} 
+
+.head img {
+    position: absolute;
+    margin-top: 40px;
+}
+
+.head p{
+    
+    position: relative;
+    width: 100%;
+    margin: 80px;
+    
+} 
+
+/* intro video */
+
+.video {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} 
+
+
+/* page content */
+
+.citytour h2 {
+    padding: 20px;
+}
+
+.citytour p {
+    width: 800px;
+}
+
+.intro {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* intro video */
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+/* main body */
+
+.section {
+    background: rgb(0,0,0);
+    background: rgba(0, 0, 1, 0.5);
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.site {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+   
+}
+
+
+.cath {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.cathtext {
+    /* position: relative; */
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+
+.cathtext p {
+    font-size: 20px;
+    background: rgb(0,0,0);
+    background: rgba(255, 254, 254, 0.685);
+    border: gray;
+    color: black;
+    display: flex;
+    /* position: absolute; */
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    text-align: center;
+    padding: 20px;
+
+}
+
+/* park images */
+
+.parkinfo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: black;
+}
+
+.parks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.parks h3 {
+    color: black;
+    background: rgb(0,0,0);
+    background: rgba(255, 254, 254, 0.685);
+    padding: 10px;
+
+}
+
+.p1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p1 h3 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*carousel*/
+.carousel {
+    width: 100%;
+    height: auto;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 70px;
+
+}
+
+/* back button */
+
+.backbtn {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#ADD8E6,#ADD8E6), radial-gradient(circle at top left,#00008B,#008B8B);
+    background-origin: border-box;
+    background-clip: content-box, border-box; 
+}
+
+
+
+.btn-block{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-block a {
+    color: black;
+}
+
+#back-button {
+    width: 400px;
+    height: 60px;
+    background: rgb(0,0,0);
+    background: rgba(255, 254, 254, 0.685);
+    border: none;
+}
+
+/* go to top button */
+
+#go-top-button {
+    width: 100px;
+    height: 50px;
+    display: none;  /* Hidden by default */
+    position: fixed;  /* Fixed/sticky position */
+    bottom: 20px;  /* Place the button 20px from the bottom of the page */
+    right: 30px;  /* Place the button 30px from the right */
+    z-index: 99;  /* Make sure it does not overlap */
+    background: rgb(0,0,0);
+    background: rgba(255, 254, 254, 0.685);
+    color: black;
+    border: none;
+}
+
+
+/* Footer styling */
+.footer {
+    width: 100vw;
+   display: block;
+   overflow: hidden;
+   padding: 50px 0;
+   box-sizing: border-box;
+   background-color:  rgba(0, 136, 169, 0.8);
+}
+
+.innerfooter {
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+}
+
+.innerfooter .logo-container {
+    float: left;
+    height: 100%;
+    display: block;
+}
+
+.innerfooter .logo-container img{
+    width: 100%;
+    height:auto;
+}
+
+.innerfooter .footer-third {
+    width: calc(21.6666666667% - 20px);
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+}
+
+.innerfooter .footer-third:last-child{
+    margin-right: 0px;
+}
+
+.innerfooter .footer-third h1{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.innerfooter .footer-third a{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: block;
+    font-weight: 100px;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+
+.innerfooter .footer-third li{
+    display:inline-flex;
+}
+
