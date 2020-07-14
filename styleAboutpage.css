@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+@media only screen and (max-width: 700px){
+    .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+    }
+}
+
+
+@media only screen and (max-width: 500px){
+    .responsive {
+    width: 100%;
+    }
+}
+
+.main {
+    background-color: lightblue;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    background:lightblue;
+}
+
+/* Nav bar start */
+
+.navbar {
+    list-style: none;
+    background-color: rgb(0, 136, 169, 0.8);
+    width: 100%;
+}
+
+.navbar a {
+    color: white;
+}
+
+.item:hover a {
+    text-decoration: underline;
+    color: white
+
+}
+
+.sub {
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#ADD8E6,#ADD8E6), radial-gradient(circle at top left,#00008B,#008B8B);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.sub a {
+    padding: 20px;
+}
+
+.sub:hover {
+    background-color: rgb(0, 136, 169, 0.8);
+}
+
+
+.dropnav {
+    position: relative;
+    display: inline-block;
+
+} 
+
+.dropcontent {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 100px;
+    padding: 20px;
+    z-index: 1;
+
+}
+
+.dropnav:hover .dropcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+
+.dropcontent a {
+    color: rgb(0, 136, 169, 0.8);
+    padding: 20px;
+}
+
+.drop {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.drop:hover a {
+    background-color: lightblue;
+    width: 100%;
+    
+}
+
+/* end of Nav styling */
+
+
+
+/* Get to know us forum*/
+body {
+    font-family: Merriweather, sans-serif;
+    margin: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    color: rgb(73, 73, 73);
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(0, 136, 169, 0.8);
+    color: white;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: rgba(0, 136, 169, 0.8);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: rgba(3, 79, 99, 0.8);
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+
+    
+  }
+  
+
+
+/* Footer styling */
+.footer {
+    width: 100vw;
+   display: block;
+   overflow: hidden;
+   padding: 50px 0;
+   box-sizing: border-box;
+   background-color:  rgba(0, 136, 169, 0.8);
+}
+
+.innerfooter {
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+}
+
+.innerfooter .logo-container {
+    float: left;
+    height: 100%;
+    display: block;
+}
+
+.innerfooter .logo-container img{
+    width: 100%;
+    height:auto;
+}
+
+.innerfooter .footer-third {
+    width: calc(21.6666666667% - 20px);
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+}
+
+.innerfooter .footer-third:last-child{
+    margin-right: 0px;
+}
+
+.innerfooter .footer-third h1{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.innerfooter .footer-third a{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: block;
+    font-weight: 100px;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+
+.innerfooter .footer-third li{
+    display:inline-flex;
+}
+

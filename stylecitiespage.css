@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+@media only screen and (max-width: 700px){
+    .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+    }
+}
+
+
+@media only screen and (max-width: 500px){
+    .responsive {
+    width: 100%;
+    }
+}
+
+.main{
+    background-color: lightblue;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background:lightblue;
+}
+
+/* Nav bar start */
+
+.navbar {
+    list-style: none;
+    background-color: rgb(0, 136, 169, 0.8);
+    width: 100%;
+}
+
+.navbar a {
+    color: white;
+}
+
+.item:hover a {
+    text-decoration: underline;
+    color: white
+
+}
+
+.sub {
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#ADD8E6,#ADD8E6), radial-gradient(circle at top left,#00008B,#008B8B);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.sub a {
+    padding: 20px;
+}
+
+.sub:hover a {
+    color: rgb(0, 136, 169, 0.8);
+}
+
+
+.dropnav {
+    position: relative;
+    display: inline-block;
+
+} 
+
+.dropcontent {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 100px;
+    padding: 20px;
+    z-index: 1;
+
+}
+
+.dropnav:hover .dropcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+
+.dropcontent a {
+    color: rgb(0, 136, 169, 0.8);
+    padding: 20px;
+}
+
+.drop {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.drop:hover a {
+    background-color: lightblue;
+    width: 100%;
+    
+}
+
+/* end of Nav styling */
+
+
+/* styling amazing virtual tour*/
+
+.amazing{
+    margin-top: 60px;
+   
+}
+.amazing h3{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30px; 
+    
+}
+
+.amazing p{
+    text-align: center;
+    font-size: 20px;
+    color:gray;
+    padding: 5px 0 10px 0;
+    line-height: 25px;
+    
+}
+
+/* citites gallery*/
+.cities {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.cities h2 {
+    background: rgb(0,0,0);
+    /* background: rgba(255, 254, 254, 0.685);
+    color: black; */
+    background: rgba(0, 0, 1, 0.5);
+    color: white;
+    width: 100%;
+    font-size: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    border: gray;
+    border-width: 5px;
+}
+
+/* adding "a" here*/
+.cities h2 a:hover {
+    text-decoration: none;
+    color: #0088a9;
+}
+
+.cities img {
+    padding: 20px;
+}
+
+/*london*/
+.londonhome {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+ 
+.londonhome > h2 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* text decoration none for "a" */
+.londonhome h2 a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+/* Oslo */
+ 
+.oslohome {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+ 
+.oslohome > h2 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* text decoration none for "a" */
+.oslohome h2 a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+ 
+/* budapest */
+ 
+.budahome {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+ 
+.budahome > h2 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* text decoration none for "a" */
+.budahome h2 a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+ 
+/* cologne */
+.colognehome {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+ 
+.colognehome > h2 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ /* text decoration none for "a" */
+.colognehome h2 a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+/* Amsterdam */
+ 
+.amhome {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+ 
+.amhome > h2 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* text decoration none for "a" */
+.amhome h2 a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+ 
+/* Berlin*/
+ 
+.berlinhome {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+ 
+.berlinhome > h2 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* text decoration none for "a" */
+.berlinhome h2 a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+
+
+/* Footer styling */
+
+.footer {
+    width: 100vw;
+   display: block;
+   overflow: hidden;
+   padding: 50px 0;
+   box-sizing: border-box;
+   background-color:  rgba(0, 136, 169, 0.8);
+}
+
+.innerfooter {
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+}
+
+.innerfooter .logo-container {
+    float: left;
+    height: 100%;
+    display: block;
+}
+
+.innerfooter .logo-container img{
+    width: 100%;
+    height:auto;
+}
+
+.innerfooter .footer-third {
+    width: calc(21.6666666667% - 20px);
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+}
+
+.innerfooter .footer-third:last-child{
+    margin-right: 0px;
+}
+
+.innerfooter .footer-third h1{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.innerfooter .footer-third a{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: block;
+    font-weight: 100px;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+
+
+.innerfooter .footer-third li{
+    display:inline-flex;
+}
+
+
